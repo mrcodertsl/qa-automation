@@ -1,6 +1,6 @@
 export const Passwords = {
-    STANDARD_PASSWORD: "secret_sauce",
-    WRONG_PASSWORD: "wrong_password"
+    STANDARD_PASSWORD: process.env.STANDARD_PASSWORD ?? "",
+    WRONG_PASSWORD: process.env.WRONG_PASSWORD ?? ""
 } as const;
 
 export const Usernames = {
