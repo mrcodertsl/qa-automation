@@ -1,0 +1,23 @@
+userName: ${BROWSERSTACK_USERNAME}
+accessKey: ${BROWSERSTACK_ACCESS_KEY}
+
+framework: playwright
+projectName: qa-automation
+buildName: playwright-browserstack
+
+platforms:
+  - os: Windows
+    osVersion: 11
+    browserName: playwright-chromium
+    browserVersion: latest
+  - os: OS X
+    osVersion: Ventura
+    browserName: playwright-webkit
+    browserVersion: latest
+  - os: Windows
+    osVersion: 11
+    browserName: playwright-firefox
+    browserVersion: latest
+
+browserstackLocal: false
+parallelsPerPlatform: 1
